@@ -11,15 +11,7 @@ const Navbar = () => {
         </h1>
       </div>
 
-      {/* Right Side Links & CTA */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-        <a href="#" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
-          تسجيل الدخول
-        </a>
-        <button className="btn-primary" style={{ fontSize: '0.95rem' }}>
-          قدم طلبك الآن
-        </button>
-      </div>
+      {/* Right Side Links & CTA removed as requested */}
 
     </nav>
   );

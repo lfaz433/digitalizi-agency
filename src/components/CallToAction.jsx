@@ -45,18 +45,10 @@ const CallToAction = () => {
       </div>
 
       {/* Pre-footer mini navbar */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '2rem 0', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 0', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
         <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0, letterSpacing: '-1px' }}>
           digitalizi<span style={{color: 'var(--brand-yellow)'}}>.</span>
         </h1>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-          <a href="#" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>
-            تسجيل الدخول
-          </a>
-          <button className="btn-primary" style={{ fontSize: '0.9rem', padding: '8px 20px' }}>
-            قدم الآن
-          </button>
-        </div>
       </div>
     </section>
   );
