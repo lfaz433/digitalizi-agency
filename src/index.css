@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Matching the exact deep dark background of theclips.agency but with Digitalizi branding */
+  --bg-dark: #080617; 
+  --text-light: #ffffff;
+  --text-gray: #a1a1aa;
+  
+  /* Our branding colors */
+  --brand-yellow: #FACC15;
+  --card-bg: #fffbe6; /* Light yellow background for cards (instead of light pink) */
+  --card-text: #09090b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  direction: rtl; /* For Arabic */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Container matching the clips agency width */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Utility Buttons */
+.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 24px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.pill-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Text glow effect for Hero */
+.hero-glow {
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Bento Card Styles */
+.bento-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 24px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Video Marquee Wrapper */
+.marquee-wrapper {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1.5rem;
+  animation: scroll-x 30s linear infinite;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Swiper Marquee effect override */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
