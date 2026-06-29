@@ -39,7 +39,7 @@ const Hero = () => {
         </p>
 
         {/* Main Hero Video Player (Mock) */}
-        <div style={{ position: 'relative', width: '100%', maxWidth: '1000px', height: '500px', margin: '0 auto 3rem auto', borderRadius: '30px', overflow: 'hidden', backgroundColor: '#18181b', border: '1px solid #27272a' }}>
+        <div className="hero-video" style={{ position: 'relative', width: '100%', maxWidth: '1000px', margin: '0 auto 3rem auto', borderRadius: '30px', overflow: 'hidden', backgroundColor: '#18181b', border: '1px solid #27272a' }}>
           <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }} />
           <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'var(--text-light)', width: '80px', height: '80px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
              <Play fill="black" color="black" size={32} />

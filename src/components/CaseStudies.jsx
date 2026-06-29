@@ -19,7 +19,7 @@ const CaseStudies = () => {
       </div>
 
       {/* Main Detail Card (Tracking Stats) */}
-      <div style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '30px', padding: '4rem', marginBottom: '2rem', display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+      <div className="case-card" style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '30px', marginBottom: '2rem', display: 'flex', flexWrap: 'wrap' }}>
         <div style={{ flex: '1 1 300px' }}>
           <h3 style={{ fontSize: '2.5rem', fontWeight: 900, letterSpacing: '-1px', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
             تحليل الأداء<br/>والنتائج
@@ -36,16 +36,16 @@ const CaseStudies = () => {
         </div>
         
         {/* Stats side */}
-        <div style={{ flex: '1 1 400px', display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
-          <div style={{ flex: '1 1 150px' }}>
+        <div style={{ flex: '1 1 300px', display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
+          <div style={{ flex: '1 1 120px' }}>
             <div style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-1px' }}>+45%</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', textTransform: 'uppercase' }}>الوصول الأسبوعي</div>
           </div>
-          <div style={{ flex: '1 1 150px' }}>
+          <div style={{ flex: '1 1 120px' }}>
             <div style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-1px' }}>+60%</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', textTransform: 'uppercase' }}>التفاعل مع الفيديوهات</div>
           </div>
-          <div style={{ flex: '1 1 150px' }}>
+          <div style={{ flex: '1 1 120px' }}>
             <div style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-1px' }}>+30%</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', textTransform: 'uppercase' }}>زيادة الزبائن</div>
           </div>
@@ -53,12 +53,12 @@ const CaseStudies = () => {
       </div>
 
       {/* Stat Row Cards (Pricing Packages) */}
-      <div style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '20px', padding: '2.5rem 3rem', marginBottom: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '2rem' }}>
+      <div className="pricing-card" style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '20px', marginBottom: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
           <h3 style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-1px', margin: 0 }}>الباقة الأساسية</h3>
           <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', margin: 0, textTransform: 'uppercase' }}>عرض خاص صالح لمدة شهر</p>
         </div>
-        <div style={{ display: 'flex', gap: '4rem', flexWrap: 'wrap' }}>
+        <div className="stats-row" style={{ display: 'flex', flexWrap: 'wrap' }}>
           <div>
             <div style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-1px' }}>75.000 دج</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', textTransform: 'uppercase' }}>التكلفة</div>
@@ -74,12 +74,12 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      <div style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '20px', padding: '2.5rem 3rem', marginBottom: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '2rem' }}>
+      <div className="pricing-card" style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '20px', marginBottom: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
           <h3 style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-1px', margin: 0 }}>الباقة المتقدمة</h3>
           <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', margin: 0, textTransform: 'uppercase' }}>الأكثر طلباً - لمدة شهر</p>
         </div>
-        <div style={{ display: 'flex', gap: '4rem', flexWrap: 'wrap' }}>
+        <div className="stats-row" style={{ display: 'flex', flexWrap: 'wrap' }}>
           <div>
             <div style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-1px' }}>95.000 دج</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', textTransform: 'uppercase' }}>التكلفة</div>
@@ -95,12 +95,12 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      <div style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '20px', padding: '2.5rem 3rem', marginBottom: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '2rem' }}>
+      <div className="pricing-card" style={{ backgroundColor: '#ffffff', color: '#09090b', borderRadius: '20px', marginBottom: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
           <h3 style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-1px', margin: 0 }}>الباقة الذهبية</h3>
           <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', margin: 0, textTransform: 'uppercase' }}>عرض خاص صالح لمدة شهرين</p>
         </div>
-        <div style={{ display: 'flex', gap: '4rem', flexWrap: 'wrap' }}>
+        <div className="stats-row" style={{ display: 'flex', flexWrap: 'wrap' }}>
           <div>
             <div style={{ fontSize: '2rem', fontWeight: 900, letterSpacing: '-1px' }}>180.000 دج</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#52525b', textTransform: 'uppercase' }}>التكلفة</div>

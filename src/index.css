@@ -110,3 +110,73 @@ body {
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
+/* --- Responsive Utility Classes --- */
+
+/* Hero Video */
+.hero-video {
+  height: 500px;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Case Study / Pricing Cards */
+.case-card {
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.pricing-card {
+  padding: 2.5rem 3rem;
+  gap: 2rem;
+}
+
+.stats-row {
+  gap: 4rem;
+}
+
+/* Media Queries for Mobile/Tablets */
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .bento-card:nth-child(4) { /* The full width bottom card */
+    padding: 3rem 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 300px;
+  }
+  
+  .case-card {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .pricing-card {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1.5rem;
+  }
+  
+  .stats-row {
+    gap: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h2 {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+}

@@ -18,7 +18,7 @@ const BentoFeatures = () => {
         </p>
       </div>
 
-      <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: '1fr 1fr' }}>
+      <div className="bento-grid">
         
         {/* Row 1 */}
         <div className="bento-card" style={{ padding: 0, minHeight: '400px' }}>
